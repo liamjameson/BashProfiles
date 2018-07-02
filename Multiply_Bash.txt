@@ -1,0 +1,19 @@
+# Setting PATH for Python 3.6
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+export PATH
+export PATH=~/.local/bin:$PATH
+export PATH=/var/www/html/announcemedia/dev_tools/bash:$PATH
+# Added by install_latest_perl_osx.pl
+[ -r /Users/liam.jameson/.bashrc ] && source /Users/liam.jameson/.bashrc
+
+# colors
+PS1='\w\[\033[0;32m\]$( git branch 2> /dev/null | cut -f2 -d\* -s | sed "s/^ / [/" | sed "s/$/]/" )\[\033[0m\] \$ '
+
+# Tell grep to highlight matches
+export GREP_OPTIONS='--color=auto'
+
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/liam.jameson/.sdkman"
+[[ -s "/Users/liam.jameson/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/liam.jameson/.sdkman/bin/sdkman-init.sh"
