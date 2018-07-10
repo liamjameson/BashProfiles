@@ -1,0 +1,3 @@
+Bash Scripting:
+---------------
+Bash Brackets Quick Reference: https://dev.to/rpalo/bash-brackets-quick-reference-4eh6
